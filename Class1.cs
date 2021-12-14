@@ -3,29 +3,82 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-#pragma warning disable CS1717 // Назначение выполнено для той же переменной
 
 namespace Homework1
 {
     class drobes
     {
-        public static int Celoe;
-        public static int Znamenat;
-        public static int Chislit;
-        public static char Act;
-        public drobes(int Celoe) { drobes.Celoe = Celoe; }
-        public void Deconstruct1(int Celoe) { drobes.Celoe = Celoe;  }
-        public drobes(int Znamenat, int Chislit) { drobes.Znamenat = Znamenat; drobes.Chislit = Chislit; }
-        public void Deconstruct2(int Znamenat, int Chislit) { drobes.Znamenat = Znamenat; drobes.Chislit = Chislit; }
-        public drobes(int Celoe, int Znamenat, int Chislit) { drobes.Celoe = Celoe; drobes.Znamenat = Znamenat; drobes.Chislit = Chislit; }
-        public void Deconstruct3(int Celoe, int Znamenat, int Chislit) { drobes.Celoe = Celoe; drobes.Znamenat = Znamenat; drobes.Chislit = Chislit; }
+        //Поля класса
+        public int Znamenat;
+        public int Chislit;
+        //Конструкторы
+        public drobes(int Chislit) { this.Chislit = Chislit; this.Znamenat = 1; }
 
-        public drobes(char Act) { Act = Act; }
-        public void DeconstructAct(int Celoe) { drobes.Act = Act; }
+        public drobes(int Chislit, int Znamenat ) {  this.Chislit = Chislit; this.Znamenat = Znamenat; }
 
-        //public static void Math(out int Celoe, out int Znamenat, out int Chislit, out char Act)
-        //{
-            
-        //}
+        public drobes(int value, int Chislit, int Znamenat) { this.Chislit = value * Znamenat + Chislit; this.Znamenat = Znamenat; }
+        //Методы: НОК и ТоDecimal
+        public static void NOC(drobes Drobe1, drobes Drobe2)
+        {
+            int Maximum = Math.Max(Drobe1.Znamenat, Drobe2.Znamenat);
+            int MaxStat = Maximum;
+            int Minimum = Math.Min(Drobe1.Znamenat, Drobe2.Znamenat);
+
+            if (Drobe1.Znamenat == Drobe2.Znamenat) { }
+            else 
+            { 
+                while (Maximum % Minimum != 0)
+                {
+                    Maximum += MaxStat;
+                }
+                int multiply = Maximum / Minimum;
+
+                if (Drobe1.Znamenat > Drobe2.Znamenat)
+                {
+                    Drobe1.Znamenat = Drobe1.Znamenat * multiply;
+                    Drobe1.Chislit = Drobe1.Chislit * multiply;
+                }
+                else
+                {
+                    Drobe2.Znamenat = Drobe2.Znamenat * multiply;
+                    Drobe2.Chislit = Drobe2.Chislit * multiply;
+                }
+            }
+        }
+        public double ToDecimal()
+        {
+            return (double)Chislit / Znamenat;
+        }
+        //операторы
+        public static drobes operator +(drobes Drobe1, drobes Drobe2)
+        {
+            NOC(Drobe1, Drobe2);
+            return new drobes(
+                Drobe1.Chislit + Drobe2.Chislit,
+                Drobe2.Znamenat + Drobe2.Znamenat
+                );
+        }
+        public static drobes operator -(drobes Drobe1, drobes Drobe2)
+        {
+            NOC(Drobe1, Drobe2);
+            return new drobes(
+                Drobe1.Chislit - Drobe2.Chislit,
+                Drobe2.Znamenat - Drobe2.Znamenat
+                );
+        }
+        public static drobes operator /(drobes Drobe1, drobes Drobe2)
+        {
+            return new drobes(
+                Drobe1.Chislit * Drobe2.Znamenat,
+                Drobe2.Znamenat * Drobe2.Chislit
+                );
+        }
+        public static drobes operator *(drobes Drobe1, drobes Drobe2)
+        {
+            return new drobes(
+                Drobe1.Chislit * Drobe2.Chislit,
+                Drobe2.Znamenat * Drobe2.Znamenat
+                );
+        }
     }
 }
