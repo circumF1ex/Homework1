@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1\\Desktop\\ДЗ1\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\инет\\Desktop\\Новая папка (3)\\Homework1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1\\Desktop\\ДЗ1\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\инет\\Desktop\\Новая папка (3)\\Homework1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1\\Desktop\\ДЗ1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\инет\\Desktop\\Новая папка (3)\\Homework1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\1\\Desktop\\ДЗ1\\ConsoleApp1\\ConsoleApp1.csproj",
-        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1\\Desktop\\ДЗ1\\ConsoleApp1\\obj\\",
+        "projectPath": "C:\\Users\\инет\\Desktop\\Новая папка (3)\\Homework1\\ConsoleApp1.csproj",
+        "packagesPath": "C:\\Users\\инет\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\инет\\Desktop\\Новая папка (3)\\Homework1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\инет\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
