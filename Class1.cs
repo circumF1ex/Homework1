@@ -33,7 +33,7 @@ namespace Homework1
                 }
                 int multiply = Maximum / Minimum;
 
-                if (Drobe1.Znamenat > Drobe2.Znamenat)
+                if (Drobe1.Znamenat < Drobe2.Znamenat)
                 {
                     Drobe1.Znamenat = Drobe1.Znamenat * multiply;
                     Drobe1.Chislit = Drobe1.Chislit * multiply;
@@ -50,34 +50,34 @@ namespace Homework1
             return (double)Chislit / Znamenat;
         }
         //операторы
-        public static drobes operator +(drobes Drobe1, drobes Drobe2)
+        public static drobes operator +(drobes value, drobes value1)
         {
-            NOC(Drobe1, Drobe2);
+            NOC(value, value1);
             return new drobes(
-                Drobe1.Chislit + Drobe2.Chislit,
-                Drobe2.Znamenat + Drobe2.Znamenat
+                value.Chislit + value1.Chislit
+                ,value.Znamenat = value1.Znamenat
                 );
         }
-        public static drobes operator -(drobes Drobe1, drobes Drobe2)
+        public static drobes operator -(drobes value, drobes value2)
         {
-            NOC(Drobe1, Drobe2);
+            NOC(value, value2);
             return new drobes(
-                Drobe1.Chislit - Drobe2.Chislit,
-                Drobe2.Znamenat - Drobe2.Znamenat
+                value.Chislit - value2.Chislit
+                ,value.Znamenat = value2.Znamenat
                 );
         }
-        public static drobes operator /(drobes Drobe1, drobes Drobe2)
+        public static drobes operator /(drobes value, drobes value1)
         {
             return new drobes(
-                Drobe1.Chislit * Drobe2.Znamenat,
-                Drobe2.Znamenat * Drobe2.Chislit
+                value.Chislit * value1.Znamenat,
+                value.Znamenat * value1.Chislit
                 );
         }
-        public static drobes operator *(drobes Drobe1, drobes Drobe2)
+        public static drobes operator *(drobes value, drobes value1)
         {
             return new drobes(
-                Drobe1.Chislit * Drobe2.Chislit,
-                Drobe2.Znamenat * Drobe2.Znamenat
+                value1.Chislit * value.Chislit,
+                value1.Znamenat * value.Znamenat
                 );
         }
     }
