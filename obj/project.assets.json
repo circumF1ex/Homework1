@@ -9,23 +9,19 @@
     ".NETFramework,Version=v4.5": []
   },
   "packageFolders": {
-    "C:\\Users\\инет\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\инет\\Desktop\\MyRepos\\Homework1\\Homework1.csproj",
+      "projectUniqueName": "C:\\Users\\1\\Desktop\\ДЗ1\\Homework1\\Homework1.csproj",
       "projectName": "Homework1",
-      "projectPath": "C:\\Users\\инет\\Desktop\\MyRepos\\Homework1\\Homework1.csproj",
-      "packagesPath": "C:\\Users\\инет\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\инет\\Desktop\\MyRepos\\Homework1\\obj\\",
+      "projectPath": "C:\\Users\\1\\Desktop\\ДЗ1\\Homework1\\Homework1.csproj",
+      "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\1\\Desktop\\ДЗ1\\Homework1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\инет\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -37,6 +33,7 @@
       },
       "frameworks": {
         "net45": {
+          "targetAlias": "net45",
           "projectReferences": {}
         }
       },
@@ -47,7 +44,10 @@
       }
     },
     "frameworks": {
-      "net45": {}
+      "net45": {
+        "targetAlias": "net45",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+      }
     },
     "runtimes": {
       "win7-x86": {

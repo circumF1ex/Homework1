@@ -10,8 +10,8 @@ namespace Homework1
 
     class Event
     {
-        event Hehehe Znamenat;
-        event Hehehe Chislit;
+        //protected event Hehehe Znamenat;
+        //protected event Hehehe Chislit;
 
         public static int displayznamenat(int Znamenat)
         {
@@ -30,6 +30,7 @@ namespace Homework1
         public int Znamenat;
         public int Chislit;
         //Индексатор
+
         //public int this[int Znamenat, int Chislit]
         //{
         //    get
@@ -42,6 +43,7 @@ namespace Homework1
         //        this.Chislit = Chislit;
         //    }
         //}
+
         //Конструкторы
         public drobes(int Chislit) { this.Chislit = Chislit; this.Znamenat = 1; }
 

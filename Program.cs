@@ -8,14 +8,16 @@ namespace Homework1
         {
 
             drobes Drobe1 = new drobes(5, 10); //0.5
-            Console.WriteLine($"{Event.displaychislit(Drobe1.Chislit)}" + "/"+$"{Event.displayznamenat(Drobe1.Znamenat)}");
+            Console.WriteLine($"{Event.displaychislit(Drobe1.Chislit)}" + "/"+$"{Event.displayznamenat(Drobe1.Znamenat)}"
+                + "=" + $"{Drobe1.ToDecimal()}");
 
             drobes Drobe2 = new drobes(5, 20); //0.25
-            Console.WriteLine($"{Event.displaychislit(Drobe2.Chislit)}" + "/" + $"{Event.displayznamenat(Drobe2.Znamenat)}");
+            Console.WriteLine($"{Event.displaychislit(Drobe2.Chislit)}" + "/" + $"{Event.displayznamenat(Drobe2.Znamenat)}"
+                + "=" + $"{Drobe2.ToDecimal()}");
 
             drobes Drobe3 = Drobe1 + Drobe2; //0.75
-            Console.WriteLine($"{Event.displaychislit(Drobe3.Chislit)}" + "/" + $"{Event.displayznamenat(Drobe3.Znamenat)}");
-            Console.WriteLine(Drobe3.ToDecimal());
+            Console.WriteLine($"{Event.displaychislit(Drobe3.Chislit)}" + "/" + $"{Event.displayznamenat(Drobe3.Znamenat)}" +
+                "=" + $"{Drobe3.ToDecimal()}");
 
             Console.ReadLine();
             Console.Clear();
