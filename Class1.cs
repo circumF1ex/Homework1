@@ -6,11 +6,42 @@ using System.Threading.Tasks;
 
 namespace Homework1
 {
+    delegate void Hehehe(string Message);
+
+    class Event
+    {
+        event Hehehe Znamenat;
+        event Hehehe Chislit;
+
+        public static int displayznamenat(int Znamenat)
+        {
+            return Znamenat;
+        }
+
+        public static int displaychislit(int Chislit)
+        {
+            return Chislit;
+        }
+    }
+    
     class drobes
     {
         //Поля класса
         public int Znamenat;
         public int Chislit;
+        //Индексатор
+        //public int this[int Znamenat, int Chislit]
+        //{
+        //    get
+        //    {
+        //        return Znamenat, Chislit;
+        //    }
+        //    set
+        //    {
+        //        this.Znamenat = Znamenat;
+        //        this.Chislit = Chislit;
+        //    }
+        //}
         //Конструкторы
         public drobes(int Chislit) { this.Chislit = Chislit; this.Znamenat = 1; }
 

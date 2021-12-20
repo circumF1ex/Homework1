@@ -8,9 +8,13 @@ namespace Homework1
         {
 
             drobes Drobe1 = new drobes(5, 10); //0.5
+            Console.WriteLine($"{Event.displaychislit(Drobe1.Chislit)}" + "/"+$"{Event.displayznamenat(Drobe1.Znamenat)}");
+
             drobes Drobe2 = new drobes(5, 20); //0.25
+            Console.WriteLine($"{Event.displaychislit(Drobe2.Chislit)}" + "/" + $"{Event.displayznamenat(Drobe2.Znamenat)}");
 
             drobes Drobe3 = Drobe1 + Drobe2; //0.75
+            Console.WriteLine($"{Event.displaychislit(Drobe3.Chislit)}" + "/" + $"{Event.displayznamenat(Drobe3.Znamenat)}");
             Console.WriteLine(Drobe3.ToDecimal());
 
             Console.ReadLine();
@@ -25,9 +29,10 @@ namespace Homework1
             Console.ReadLine();
             Console.Clear();
 
-            drobes Drobe4 = new(100); //10
+            drobes Drobe4 = new drobes(100); //10
             drobes FinalResult = (Drobe1 + Drobe2) / Drobe3 * Drobe4 - Drobe2;
             Console.WriteLine(FinalResult.ToDecimal()); //99.3
+            Console.ReadLine();
         }
     }
 }
